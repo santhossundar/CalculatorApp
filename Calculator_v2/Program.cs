@@ -15,6 +15,9 @@ namespace Calculator_v2
 
             CommandLineInputForOperator inputForOperator = new CommandLineInputForOperator();
             string operation = inputForOperator.getOperator();
+
+            CommandLineInputForNumbers inputForNumbers = new CommandLineInputForNumbers();
+            List<int> numbers = inputForNumbers.getNumbers(operation);
         }
     }
 }
