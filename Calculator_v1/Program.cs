@@ -22,7 +22,7 @@ namespace Calculator_v1
                     Console.WriteLine("Total is " + Addition(getUserInputs(operation)));
                     break;
                 case "-":
-                    Subtraction();
+                    Console.WriteLine("Difference is " + Subtraction(getUserInputs(operation)));
                     break;
                 case "*":
                     Multiplication();
@@ -62,7 +62,7 @@ namespace Calculator_v1
 
                     numberInputCount++;
 
-                    if ((operation == "-" || operation == "/") && numberInputCount > 2)
+                    if ((operation == "-" || operation == "/") && numberInputCount >= 2)
                     {
                         break;
                     }
@@ -88,9 +88,11 @@ namespace Calculator_v1
             throw new NotImplementedException();
         }
 
-        public static void Subtraction()
+        public static int Subtraction(List<int> numbers)
         {
-            throw new NotImplementedException();
+            int difference = numbers[0] - numbers[1];
+
+            return difference;
         }
 
         public static int Addition(List<int> numbers)
