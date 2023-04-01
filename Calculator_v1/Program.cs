@@ -28,7 +28,7 @@ namespace Calculator_v1
                     Console.WriteLine("Multiplied value is " + Multiplication(getUserInputs(operation)));
                     break;
                 case "/":
-                    Divition();
+                    Console.WriteLine("Divided value is " + Divition(getUserInputs(operation)));
                     break;
             }
         }
@@ -78,9 +78,11 @@ namespace Calculator_v1
             }   
         }
 
-        public static void Divition()
+        public static float Divition(List<int> numbers)
         {
-            throw new NotImplementedException();
+            float dividedValue = (float)numbers[0] / numbers[1];
+
+            return dividedValue;
         }
 
         public static int Multiplication(List<int> numbers)
