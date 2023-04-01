@@ -12,6 +12,9 @@ namespace Calculator_v2
         {
             DisplayMenu displayMenu = new DisplayMenu();
             displayMenu.ShowOperatorSelectionMenu();
+
+            CommandLineInputForOperator inputForOperator = new CommandLineInputForOperator();
+            string operation = inputForOperator.getOperator();
         }
     }
 }
