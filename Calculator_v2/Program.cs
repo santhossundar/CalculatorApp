@@ -18,6 +18,19 @@ namespace Calculator_v2
 
             CommandLineInputForNumbers inputForNumbers = new CommandLineInputForNumbers();
             List<int> numbers = inputForNumbers.getNumbers(operation);
+
+            double result = 0;
+            switch(operation)
+            {
+                case "+":
+                    AddOperation addOperation = new AddOperation();
+                    result = addOperation.perform(numbers);
+                    break;
+                case "-":
+                    SubtractOperation subtractOperation = new SubtractOperation();
+                    result = subtractOperation.perform(numbers);
+                    break; 
+            }
         }
     }
 }
