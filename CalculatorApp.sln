@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator_v1", "Calculator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_v2", "Calculator_v2\Calculator_v2.csproj", "{C5C45A05-F9A9-4F53-9B34-DCAA8F9E23DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_v3", "Calculator_v3\Calculator_v3.csproj", "{B0C19F8B-7839-4523-ABB9-9B76D6971184}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C5C45A05-F9A9-4F53-9B34-DCAA8F9E23DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C45A05-F9A9-4F53-9B34-DCAA8F9E23DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C45A05-F9A9-4F53-9B34-DCAA8F9E23DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C19F8B-7839-4523-ABB9-9B76D6971184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C19F8B-7839-4523-ABB9-9B76D6971184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C19F8B-7839-4523-ABB9-9B76D6971184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C19F8B-7839-4523-ABB9-9B76D6971184}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
