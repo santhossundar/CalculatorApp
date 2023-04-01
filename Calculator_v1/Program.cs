@@ -24,8 +24,8 @@ namespace Calculator_v1
                 case "-":
                     Console.WriteLine("Difference is " + Subtraction(getUserInputs(operation)));
                     break;
-                case "*":
-                    Multiplication();
+                case "x":
+                    Console.WriteLine("Multiplied value is " + Multiplication(getUserInputs(operation)));
                     break;
                 case "/":
                     Divition();
@@ -83,9 +83,16 @@ namespace Calculator_v1
             throw new NotImplementedException();
         }
 
-        public static void Multiplication()
+        public static int Multiplication(List<int> numbers)
         {
-            throw new NotImplementedException();
+            int number = 1;
+
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                number *= numbers[i];
+            }
+
+            return number;
         }
 
         public static int Subtraction(List<int> numbers)
