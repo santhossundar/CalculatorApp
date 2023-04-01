@@ -1,6 +1,6 @@
 ﻿namespace Calculator_v3.Operation
 {
-    public interface Operation
+    public interface IOperation
     {
         float perform(List<int> numbers);
     }

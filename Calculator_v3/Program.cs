@@ -17,7 +17,7 @@ namespace Calculator_v2
             CommandLineInputForNumbers inputForNumbers = new CommandLineInputForNumbers();
             List<int> numbers = inputForNumbers.getNumbers(operation);
 
-            Operation performOperation = null;
+            IOperation performOperation = null;
 
             switch(operation)
             {

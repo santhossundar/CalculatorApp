@@ -2,7 +2,7 @@
 
 namespace Calculator_v3.Operation
 {
-    public class MultiplyOperation : Operation
+    public class MultiplyOperation : IOperation
     {
         public float perform(List<int> numbers)
         {
