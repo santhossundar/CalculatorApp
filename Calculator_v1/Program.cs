@@ -19,7 +19,7 @@ namespace Calculator_v1
             switch (operation)
             {
                 case "+":
-                    Addition();
+                    Console.WriteLine("Total is " + Addition(getUserInputs(operation)));
                     break;
                 case "-":
                     Subtraction();
@@ -93,9 +93,16 @@ namespace Calculator_v1
             throw new NotImplementedException();
         }
 
-        public static void Addition()
+        public static int Addition(List<int> numbers)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+
+            for(int i=0; i<numbers.Count; i++) 
+            {
+                sum += numbers[i];
+            }
+
+            return sum;
         }
     }
 }
