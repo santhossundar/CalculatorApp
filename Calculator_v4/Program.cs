@@ -17,11 +17,8 @@ namespace Calculator_v4
             CommandLineInputForNumbers inputForNumbers = new CommandLineInputForNumbers();
             List<int> numbers = inputForNumbers.getNumbers(operation);
 
-            IOperation performOperation = null;
-
             OperationFactory operationFactory = new OperationFactory();
-            performOperation = operationFactory.getInstance(operation);
-
+            IOperation performOperation = operationFactory.getInstance(operation);
             double result = performOperation.perform(numbers);
 
             CommandLineOutputForResult outputForResult = new CommandLineOutputForResult();
