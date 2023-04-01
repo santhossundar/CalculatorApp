@@ -39,6 +39,9 @@ namespace Calculator_v2
                     result = divideOperation.perform(numbers);
                     break;
             }
+
+            CommandLineOutput output = new CommandLineOutput();
+            output.showResult(result);
         }
     }
 }
