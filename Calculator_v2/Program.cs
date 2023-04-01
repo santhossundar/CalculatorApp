@@ -34,6 +34,10 @@ namespace Calculator_v2
                     MultiplyOperation multiplyOperation = new MultiplyOperation();
                     result = multiplyOperation.perform(numbers);
                     break;
+                case "/":
+                    DivideOperation divideOperation = new DivideOperation();
+                    result = divideOperation.perform(numbers);
+                    break;
             }
         }
     }
