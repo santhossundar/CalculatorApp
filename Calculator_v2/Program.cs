@@ -10,7 +10,8 @@ namespace Calculator_v2
     {
         static void Main(String[] args)
         {
-            Console.WriteLine("Calculator App v2");
+            DisplayMenu displayMenu = new DisplayMenu();
+            displayMenu.ShowOperatorSelectionMenu();
         }
     }
 }
