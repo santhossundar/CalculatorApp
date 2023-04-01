@@ -29,7 +29,11 @@ namespace Calculator_v2
                 case "-":
                     SubtractOperation subtractOperation = new SubtractOperation();
                     result = subtractOperation.perform(numbers);
-                    break; 
+                    break;
+                case "x":
+                    MultiplyOperation multiplyOperation = new MultiplyOperation();
+                    result = multiplyOperation.perform(numbers);
+                    break;
             }
         }
     }
