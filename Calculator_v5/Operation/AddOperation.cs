@@ -4,7 +4,7 @@ namespace Calculator_v5.Operation
 {
     public class AddOperation : IOperation
     {
-        public float perform(List<int> numbers)
+        public float Perform(List<int> numbers)
         {
             int sum = 0;
 

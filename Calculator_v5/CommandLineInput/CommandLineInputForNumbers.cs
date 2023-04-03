@@ -2,7 +2,7 @@
 {
     public class CommandLineInputForNumbers
     {
-        public List<int> getNumbers(string operation)
+        public List<int> GetNumbers(string operation)
         {
             List<int> numbers = new List<int>();
 

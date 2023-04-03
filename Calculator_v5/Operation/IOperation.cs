@@ -2,6 +2,6 @@
 {
     public interface IOperation
     {
-        float perform(List<int> numbers);
+        float Perform(List<int> numbers);
     }
 }

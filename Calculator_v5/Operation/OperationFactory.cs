@@ -4,7 +4,7 @@ namespace Calculator_v5.Operation
 {
     public class OperationFactory
     {  
-        public IOperation getInstance(string operation)
+        public IOperation GetInstance(string operation)
         {
             IOperation performOperation = null;
 

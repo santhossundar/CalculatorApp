@@ -8,21 +8,21 @@ namespace Calculator_v5
     {
         static void Main(String[] args)
         {
-            DisplayMenu displayMenu = new DisplayMenu();
-            displayMenu.ShowOperatorSelectionMenu();
-
+            DisplayMenu menu = new DisplayMenu();
             CommandLineInputForOperator inputForOperator = new CommandLineInputForOperator();
-            string operation = inputForOperator.getOperator();
-
             CommandLineInputForNumbers inputForNumbers = new CommandLineInputForNumbers();
-            List<int> numbers = inputForNumbers.getNumbers(operation);
-
-            OperationFactory operationFactory = new OperationFactory();
-            IOperation performOperation = operationFactory.getInstance(operation);
-            double result = performOperation.perform(numbers);
-
+            OperationFactory factory = new OperationFactory();
             CommandLineOutputForResult outputForResult = new CommandLineOutputForResult();
-            outputForResult.showResult(result);
+
+            Calculator calculator = new Calculator(
+                menu, 
+                inputForOperator, 
+                inputForNumbers, 
+                factory, 
+                outputForResult
+            );
+
+            calculator.Execute();
         }
     }
 }

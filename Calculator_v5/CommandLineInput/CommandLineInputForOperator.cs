@@ -2,7 +2,7 @@
 {
     public class CommandLineInputForOperator
     {
-        public string getOperator()
+        public string GetOperator()
         {
             Console.Write("Enter the operation: ");
             string operation = Console.ReadLine();

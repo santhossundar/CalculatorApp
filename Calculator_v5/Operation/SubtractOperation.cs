@@ -4,7 +4,7 @@ namespace Calculator_v5.Operation
 {
     public class SubtractOperation : IOperation
     {
-        public float perform(List<int> numbers)
+        public float Perform(List<int> numbers)
         {
             int difference = numbers[0] - numbers[1];
 
